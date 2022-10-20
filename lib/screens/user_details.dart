@@ -6,6 +6,7 @@ import 'package:github_repository_getx/screens/widget/user/header_info.dart';
 import 'package:github_repository_getx/utils/loading_progress.dart';
 import 'package:github_repository_getx/utils/messages/error_message_user.dart';
 import 'package:github_repository_getx/utils/messages/error_messages.dart';
+import 'package:github_repository_getx/utils/messages/shimmer_user_details.dart';
 import 'package:github_repository_getx/utils/utility.dart';
 
 class UserDetails extends StatefulWidget {
@@ -25,7 +26,7 @@ class _UserDetailsState extends State<UserDetails> {
     return Scaffold(
       body: Obx(
         () => userController.isLoading.value
-            ? const LoadingProgress()
+            ? const UserDetailShimmer() // LoadingProgress()
             : Obx(
                 () => userController.hasError.value
                     ? const ErrorResponseUser()

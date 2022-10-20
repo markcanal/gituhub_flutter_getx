@@ -7,6 +7,7 @@ import 'package:github_repository_getx/utils/loading_progress.dart';
 
 import 'package:github_repository_getx/utils/messages/empty_message.dart';
 import 'package:github_repository_getx/utils/messages/error_messages.dart';
+import 'package:github_repository_getx/utils/messages/shimmer_dashboard.dart';
 import 'package:github_repository_getx/utils/utility.dart';
 
 class Dashboard extends StatelessWidget {
@@ -36,7 +37,7 @@ class Dashboard extends StatelessWidget {
         Expanded(
           child: Obx(
             () => dashboardController.isLoading.value
-                ? const LoadingProgress()
+                ? const ShimmerDashBoard()
                 : Obx(
                     () => dashboardController.hasError.value
                         ? ErrorResponse(

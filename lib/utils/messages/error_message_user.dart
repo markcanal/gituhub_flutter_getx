@@ -15,18 +15,25 @@ class _ErrorResponseUserState extends State<ErrorResponseUser> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        children: [
-          const Icon(
-            Icons.error,
-            color: Colors.red,
+    return SafeArea(
+      child: Padding(
+        padding: AppUtility.edgeInsetsAllSm,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const Icon(
+                Icons.error,
+                color: Colors.red,
+              ),
+              Text(
+                userController.errorMessage!.message.toString(),
+                style: AppUtility.labelText,
+              )
+            ],
           ),
-          Text(
-            userController.errorMessage!.message.toString(),
-            style: AppUtility.labelText,
-          )
-        ],
+        ),
       ),
     );
   }
