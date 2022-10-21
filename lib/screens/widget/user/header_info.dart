@@ -26,7 +26,7 @@ class HeaderInfo extends StatelessWidget {
       children: [
         Stack(
           children: [
-            const Image(image: NetworkImage(banner, scale: 0.5)),
+            const Image(image: NetworkImage(banner, scale: 1)),
             Positioned(
               bottom: 0,
               left: MediaQuery.of(context).size.width * 0.08,
