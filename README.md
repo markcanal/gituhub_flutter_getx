@@ -1,16 +1,14 @@
 # github_repository_getx
 
-A new Flutter project.
+Simple application using Getx FrameWork
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+[Flutter]("https://flutter.dev/")
 
-A few resources to get you started if this is your first Flutter project:
+## Application Used Package 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+-[Get]("https://pub.dev/packages/get")
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-[http]("https://pub.dev/packages/http")
+
+-[shimmer]("https://pub.dev/packages/shimmer")
