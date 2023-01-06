@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:github_repository_getx/core/binding/dashboard_binding.dart';
 import 'package:github_repository_getx/core/controllers/dashboard_controller.dart';
 import 'package:github_repository_getx/screens/dashboard.dart';
+import 'package:github_repository_getx/screens/widget/drawer/menu.dart';
 import 'package:github_repository_getx/utils/constants/page_constants.dart';
 import 'package:github_repository_getx/utils/constants/route_constant.dart';
 
@@ -43,8 +44,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const MyDrawer(),
       appBar: AppBar(title: const Text("Github Repository GetX Framework")),
       body: Dashboard(dashboardController: dashboardController),
     );
   }
 }
+
